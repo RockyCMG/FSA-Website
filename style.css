@@ -220,6 +220,7 @@ a.header-button:hover {
     width: 260px;
     height: 326px;
     margin: auto;
+    border-radius: 5px;
 }
 
 .exec-img:hover {
@@ -232,6 +233,7 @@ a.header-button:hover {
     width: 260px;
     height: 326px;
     position: absolute;
+    border-radius: 5px;
 }
 
 .exec-info {
@@ -242,6 +244,7 @@ a.header-button:hover {
     padding: 10px;
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .tommy {
