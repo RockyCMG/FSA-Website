@@ -9,6 +9,14 @@ p {
     margin-top: 30px;
 }
 
+a.a-medium {
+    font-size: 2em;
+}
+
+a.a-small {
+    font-size: 1.5em;
+}
+
 .gap {
     margin-top: 100px;
 }
@@ -16,6 +24,24 @@ p {
 .width-80 {
     margin: 0 auto;
     width: 80%;
+}
+
+.width-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.black {
+    color: black;
+}
+
+.hidden-element {
+    display: none;
+}
+
+.center {
+    width: 100%;
+    margin: 0 auto;
 }
 
 /************************ SECTIONS ***********************/
@@ -89,7 +115,7 @@ p {
     display: none;
 }
 
-.header-button-panel, .header-button{
+.header-button-panel, .header-button {
     display: none;
 }
 
@@ -120,6 +146,8 @@ a.header-button:hover {
     vertical-align: middle;
 }
 
+/********************** MAIN SECTION *************************/
+
 .logo-container {
     margin: 0 auto;
     width: 70%;
@@ -137,7 +165,7 @@ a.header-button:hover {
 
 }
 
-.content {
+.logo-content {
     width: 75%;
     margin: 0 auto;
     margin-top: 300px;
@@ -151,9 +179,34 @@ a.header-button:hover {
     padding: 50px 15%;
 }
 
-.col-inner {
-    padding: 50px;
+/******************** CULTURE ******************/
+
+.carousel-control {
+    background: none;
 }
+
+.rotating-quotes {
+    min-height: 300px;
+    margin-top: 100px;
+}
+
+.culture-icon {
+    margin: 25px 0;
+}
+
+.culture-box {
+    margin-bottom: 20px;
+    color: black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.item {
+    min-height: 100px;
+} /* BOOTSTRAP */
+
+
+/********************* SOLUTIONS *********************/
 
 .solution-box {
     background: rgba(255, 255, 255, 0.5);
@@ -186,32 +239,13 @@ a.header-button:hover {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.carousel-control {
-    background: none;
-}
-
-.item {
-    min-height: 100px;
-}
-
-.culture-box {
-    margin-bottom: 20px;
-    color: black;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.opaque-background {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 /******************** EXEC ********************/
 
 .col-md-4 {
     margin-bottom: 10px;
 }
 
-.exec-container{
+.exec-container {
     max-width: 780px;
     margin: 0 auto;
 }
@@ -251,6 +285,7 @@ a.header-button:hover {
     background: url("images/exec/tommy-small.png");
     background-size: cover;
 }
+
 .grant {
     background: url("images/exec/grant-small.png");
     background-size: cover;
@@ -276,18 +311,8 @@ a.header-button:hover {
     background-size: cover;
 }
 
-.black {
-    color: black;
-}
 
-.width-50 {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.hidden-element {
-    display: none;
-}
+/********************* CAREERS **********************/
 
 .jobs {
     margin: 75px 0;
@@ -318,6 +343,8 @@ a.header-button:hover {
     font-size: 1.3em;
 }
 
+/******************************************/
+
 .contact-form {
     color: black;
 }
@@ -326,19 +353,22 @@ a.header-button:hover {
     margin-bottom: 70px;
 }
 
-.center {
+
+.footer {
+    height: 60px;
     width: 100%;
-    margin: 0 auto;
+    background-color: black;
 }
 
-.rotating-quotes {
-    min-height: 300px;
-    margin-top: 100px;
+.footer-info {
+    line-height: 60px;
+    vertical-align: middle;
 }
+
 
 @media (min-width: 821px) and (max-width: 1027px) {
 
-    a.header-button {
+    a.header-button-full {
         font-size: 1.5em;
         margin: 10px 20px;
     }
@@ -347,7 +377,7 @@ a.header-button:hover {
 
 @media (min-width: 685px) and (max-width: 820px) {
 
-    a.header-button {
+    a.header-button-full {
         font-size: 1.2em;
         margin: 10px 18px;
     }
@@ -355,7 +385,7 @@ a.header-button:hover {
 
 @media (max-width: 684px) {
 
-    a.header-button-full, .header-button-panel-full{
+    a.header-button-full, .header-button-panel-full {
         display: none;
     }
 
