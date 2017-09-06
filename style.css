@@ -10,11 +10,11 @@ p {
 }
 
 a.a-medium {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 a.a-small {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .gap {
@@ -48,6 +48,38 @@ a.a-small {
     font-weight: 100;
 }
 
+/********************* SCROLL TO TOP ********************/
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    z-index: 500;
+    bottom: 50px;
+    right: 50px;
+    color: black;
+    background-color: #eee;
+    opacity: 0.6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -moz-box-shadow: 0px 0px 5px 1px #000;
+    -webkit-box-shadow: 0px 0px 5px 1px #000;
+    -o-box-shadow: 0px 0px 5px 1px #000;
+    box-shadow: 0px 0px 5px 1px #000;
+}
+
+.scroll-to-top:hover {
+    opacity: 0.9;
+}
+
+.scroll-to-top:active{
+    -moz-box-shadow: 0px 0px 5px 2px #000;
+    -webkit-box-shadow: 0px 0px 5px 2px #000;
+    -o-box-shadow: 0px 0px 5px 2px #000;
+    box-shadow: 0px 0px 5px 2px #000;
+}
+
 
 /************************ SECTIONS ***********************/
 
@@ -55,7 +87,14 @@ a.a-small {
     margin: 100px 0;
 }
 
-.section-inner, .section-inner-solutions {
+.section-label > h1 {
+    font-weight: 100;
+    font-size: 4.8em;
+}
+
+.section-inner,
+.section-inner-solutions,
+.section-inner-culture {
     width: 80%;
     margin: 0 auto;
     padding: 10px 0 120px 0;
@@ -138,7 +177,7 @@ a.header-button, a.header-button-full {
     color: white;
 }
 
-a.header-button:hover {
+a.header-button:hover, a.header-button-full:hover {
     opacity: 0.6;
 }
 
@@ -200,6 +239,7 @@ a.header-button:hover {
 }
 
 .culture-box {
+    min-height: 480px;
     margin-bottom: 20px;
     color: black;
     padding: 20px;
@@ -213,6 +253,7 @@ a.header-button:hover {
 .quote-writer {
     text-align: right;
     padding-right: 10%;
+    font-weight: 100;
 }
 
 .item {
@@ -296,6 +337,12 @@ a.header-button:hover {
     border-radius: 5px;
 }
 
+.exec-info > hr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    max-width: 75px;
+}
+
 .tommy {
     background: url("images/exec/tommy-small.png");
     background-size: cover;
@@ -358,21 +405,38 @@ a.header-button:hover {
     font-size: 1.3em;
 }
 
+a.job-link {
+    color: white;
+}
+
 /******************** CONTACT **********************/
 
 .contact-form {
     /*color: black;*/
 }
 
+.contact-info {
+    padding: 20px 20px 1px 20px;
+    min-height: 585px;
+}
+
+#email-address-short {
+    display: none;
+}
+
 .contact-info-section {
-    margin-bottom: 70px;
+    margin-bottom: 58px;
 }
 
 .section-inner-contacts {
     /*margin-top: 50px;*/
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 50px;
+    padding: 75px 50px;
     border-radius: 5px;
+}
+
+.contact-info-section.fsa-logo {
+    margin-top: 75px;
 }
 
 
@@ -387,6 +451,45 @@ a.header-button:hover {
 .footer-info {
     line-height: 60px;
     vertical-align: middle;
+}
+
+@media (min-width: 450px) and (max-width: 767px){
+    a.a-small {
+        font-size: 1.5em;
+    }
+    a.a-medium {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 449px){
+    a.a-small {
+        font-size: 1.2em;
+    }
+    a.a-medium {
+        font-size: 1.7em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 976px){
+    #email-address-short{
+        display: inline-block;
+    }
+
+    #email-address-full {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1018px){
+    .section-inner-culture {
+        width: 99%;
+    }
+}
+@media (max-width: 766px){
+    .section-inner-culture {
+        width: 80%;
+    }
 }
 
 
@@ -482,6 +585,14 @@ a.header-button:hover {
         width: 100%;
     }
 
+    .section-inner-contacts {
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 25px;
+    }
+
     .logo {
         font-size: 2em;
     }
@@ -489,6 +600,17 @@ a.header-button:hover {
     .job-list {
         width: 250px;
     }
+
+    .rotating-quotes {
+        min-height: 300px;
+    }
+
+    .scroll-to-top {
+        bottom: 25px;
+        right: 25px;
+    }
+
+
 }
 
 .active-drop-down {
