@@ -239,7 +239,7 @@ a.header-button:hover, a.header-button-full:hover {
 }
 
 .culture-box {
-    min-height: 480px;
+    min-height: 500px;
     margin-bottom: 20px;
     color: black;
     padding: 20px;
@@ -393,7 +393,7 @@ a.header-button:hover, a.header-button-full:hover {
 
 .job-list {
     text-align: left;
-    width: 300px;
+    max-width: 550px;
     margin: 10px auto;
     padding: 10px 4px;
     display: none;
@@ -416,7 +416,7 @@ a.job-link {
 }
 
 .contact-info {
-    padding: 20px 20px 1px 20px;
+    padding: 20px 20px 1px 0;
     min-height: 585px;
 }
 
@@ -437,6 +437,25 @@ a.job-link {
 
 .contact-info-section.fsa-logo {
     margin-top: 75px;
+}
+
+.social-buttons{
+    height: 50px;
+    max-width: 400px;
+    margin: 25px auto 0 auto;
+}
+
+.social-button {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: 0 30px;
+}
+
+.social-button:hover {
+    top: 2px;
+    left: 2px;
+    opacity: 0.7;
 }
 
 
@@ -597,9 +616,9 @@ a.job-link {
         font-size: 2em;
     }
 
-    .job-list {
-        width: 250px;
-    }
+    /*.job-list {*/
+        /*width: 250px;*/
+    /*}*/
 
     .rotating-quotes {
         min-height: 300px;
@@ -608,6 +627,14 @@ a.job-link {
     .scroll-to-top {
         bottom: 25px;
         right: 25px;
+    }
+
+    .social-buttons {
+        margin-bottom: 25px
+    }
+
+    .social-button {
+        margin: 0 15px;
     }
 
 
