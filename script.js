@@ -67,7 +67,7 @@ $(function () {
 
     /********************** FORM SUBMIT ************************/
 
-    const URL = 'https://yeuhezqo86.execute-api.us-east-1.amazonaws.com/Production/contact';
+    const URL = 'https://fsaventures.com/mail/contact.php';
 
     $('#contact-form').submit(function (e) {
 
