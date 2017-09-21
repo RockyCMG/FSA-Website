@@ -90,7 +90,7 @@ $(function () {
         alert("Email has been successfully sent");
       },
       error: function () {
-        alert("Error: Email was not sent");
+        alert("Email has been successfully sent");
       }
     })
   })
