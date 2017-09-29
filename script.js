@@ -92,7 +92,10 @@ $(function () {
       error: function () {
         alert("Email has been successfully sent");
       }
-    })
+    });
+
+    document.forms["contact-form"].reset()
+
   })
 
 });

@@ -417,7 +417,7 @@ a.job-link {
 }
 
 .contact-info {
-    padding: 20px 20px 1px 0;
+    padding: 20px 20px 1px 20px;
     min-height: 585px;
 }
 
@@ -636,6 +636,10 @@ a.job-link {
 
     .social-button {
         margin: 0 15px;
+    }
+
+    .logo-container {
+        width: 100%;
     }
 
 
